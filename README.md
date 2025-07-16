@@ -1,4 +1,4 @@
-#CodeFund Backend - API y Agente de Verificación Autónomo
+# CodeFund Backend - API y Agente de Verificación Autónomo
 
 Este repositorio contiene el código fuente del backend para CodeFund, compuesto por dos servicios principales escritos en Python:
 
@@ -47,12 +47,12 @@ Requisitos Previos
 
     Una dirección de contrato CampaignFactory desplegada en Sepolia.
 
-###1. Clonar el repositorio y navegar a la carpeta
+### 1. Clonar el repositorio y navegar a la carpeta
 
 git clone <repo_url>
 cd <nombre_del_repo>/app-backend
 
-###2. Crear y activar un entorno virtual
+### 2. Crear y activar un entorno virtual
 
 Crear el entorno
 python3 -m venv venv
@@ -63,11 +63,11 @@ source venv/bin/activate
 Activar en Windows
 venv\Scripts\activate
 
-###3. Instalar dependencias
+### 3. Instalar dependencias
 
 pip install fastapi "uvicorn[standard]" web3 python-dotenv requests
 
-###4. Configurar las variables de entorno
+### 4. Configurar las variables de entorno
 
 Este es el paso más importante para que tanto la API como el Agente puedan funcionar.
 
