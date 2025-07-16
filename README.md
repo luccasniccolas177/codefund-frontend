@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeFund - DApp de Crowdfunding Descentralizado
 
-## Getting Started
+CodeFund es una plataforma de crowdfunding basada en Web3 que permite financiar proyectos (especialmente de software) de forma segura y transparente. Los fondos solo se liberan si los desarrolladores cumplen hitos específicos, verificados on-chain. En caso contrario, los fondos pueden devolverse automáticamente gracias a los contratos inteligentes.
 
-First, run the development server:
+---
+
+## 🚀 Funcionalidad
+
+✅ Explorar proyectos y ver su progreso de financiamiento.  
+✅ Conectar wallet MetaMask para interactuar con la blockchain.  
+✅ Crear nuevas campañas de crowdfunding.  
+✅ Visualizar detalles de cada campaña.  
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Frontend:** Next.js (React)
+- **Estilos:** Tailwind CSS
+- **Web3:** ethers.js, MetaMask
+- **HTTP Client:** Axios
+- **Backend esperado:** FastAPI (API REST)
+- **Lenguaje backend (API):** Python 3.10+
+- **Blockchain:** Smart Contracts en Solidity (en desarrollo)
+
+---
+
+## ⚙️ Instalación
+
+### 1. Clonar el repositorio
+
+```bash
+git clone <repo_url>
+cd codefund-frontend-master
+```
+
+---
+
+### 2. Instalar dependencias frontend
+
+```bash
+npm install
+```
+
+ó si usas yarn:
+
+```bash
+yarn install
+```
+
+---
+
+### 3. Configurar variables de entorno
+
+Crea un archivo `.env.local` en la raíz del proyecto con la URL de la API backend:
+
+```
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
+
+---
+
+## 🏃‍♂️ Cómo correr la aplicación
+
+### ✅ Levantar Frontend
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+o con yarn:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Por defecto estará disponible en:
 
-## Learn More
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Conexión con el backend
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este frontend espera que el backend (FastAPI) esté corriendo en:
 
-## Deploy on Vercel
+```
+http://localhost:8000
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ➤ Estilos
+
+- Usa **Tailwind CSS** para los estilos.
+- Diseño responsivo y limpio.
+
+---
+
+## 📈 Estado del proyecto
+
+✅ Frontend Next.js funcionando.  
+✅ Integración con MetaMask básica.  
+✅ Llamadas a la API backend.  
+🔜 Integración real con Smart Contracts.  
+🔜 Validación on-chain de milestones y liberación de fondos.
+
+
